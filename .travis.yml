@@ -17,3 +17,5 @@ jobs:
   include:
     - stage: test
       script: vendor/bin/phpunit
+    - stage: test
+      script: vendor/bin/phpcs app config
