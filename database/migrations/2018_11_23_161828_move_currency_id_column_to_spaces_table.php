@@ -8,7 +8,7 @@ class MoveCurrencyIdColumnToSpacesTable extends Migration {
     public function up() {
         // Create
         Schema::table('spaces', function (Blueprint $table) {
-            $table->unsignedInteger('currency_id')->after('id');
+            $table->unsignedInteger('currency_id')->after('id')->default(0);
 
         });
 
